@@ -1,0 +1,24 @@
+NEW PLAYLIST DOWNLOAD
+1. Request playlist name
+2. Find playlist data: artwork
+3. For each song
+  a. Find in youtube: https://pypi.org/project/youtube-search-python/
+  b. Download from youtube: youtube-dl
+  c. Convert to mp3: ffmpeg
+  d. Retrieve metadata from Spotify:
+Python library  https://spotipy.readthedocs.io/en/2.19.0/?highlight=user_playlists#spotipy.client.Spotify.user_playlists
+Spotify API  https://developer.spotify.com/dashboard/applications/60dd97ed6edb4789969addf2a5ac952e
+  d. Add metadata to mp3 file: https://eyed3.readthedocs.io/en/latest/
+
+UPDATE PLAYLIST
+1. Request playlist name
+2. Find playlist data
+3. For each song:
+  a. If already downloaded
+    i. Download from youtube
+    ii. Convert to mp3
+    iii. Retrieve metadata from Spotify
+    iv. Add metadata to mp3 file
+  b. If new song
+
+MANUALLY ADD SONG TO PLAYLIST
